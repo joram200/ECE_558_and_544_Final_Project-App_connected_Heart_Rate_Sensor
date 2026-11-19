@@ -1,0 +1,20 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_wb_phyplnt_io_behav xil_defaultlib.tb_wb_phyplnt_io xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv" Line 41. Module wb_phyplnt_io doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v" Line 31. Module rgbPWM(USE_DIVIDER=1'b1,DIVIDE_COUNT=200) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv" Line 41. Module wb_phyplnt_io doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v" Line 31. Module rgbPWM(USE_DIVIDER=1'b1,DIVIDE_COUNT=200) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.rgbPWM(USE_DIVIDER=1'b1,DIVIDE_C...
+Compiling module xil_defaultlib.wb_phyplnt_io
+Compiling module xil_defaultlib.tb_wb_phyplnt_io
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_wb_phyplnt_io_behav

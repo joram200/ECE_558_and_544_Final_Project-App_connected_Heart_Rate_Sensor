@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Oct 23 15:45:09 2026" VIVADOVERSION="2024.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1_axlite2wbsp" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="m_wb_ack_0" SIGIS="undef" SIGNAME="External_Ports_m_wb_ack_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_ack"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="25" NAME="m_wb_adr_0" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_adr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_adr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_wb_cyc_0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_cyc">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_cyc"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="m_wb_dat_r_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_m_wb_dat_r_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_dat_r"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_wb_dat_w_0" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_dat_w">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_dat_w"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_wb_err_0" SIGIS="undef" SIGNAME="External_Ports_m_wb_err_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_err"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_wb_reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="axlite2wbsp_0_m_wb_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_wb_sel_0" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_sel">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_sel"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_wb_stall_0" SIGIS="undef" SIGNAME="External_Ports_m_wb_stall_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_stall"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_wb_stb_0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_stb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_stb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_wb_we_0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_we">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="m_wb_we"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="27" NAME="s_axi_0_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_araddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_araddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="s_axi_0_arcache" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_arcache">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_arcache"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="s_axi_0_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_arprot">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_arprot"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_0_arready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_arready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_arready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_0_arvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_arvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_arvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="27" NAME="s_axi_0_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awaddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_awaddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="s_axi_0_awcache" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awcache">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_awcache"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="s_axi_0_awprot" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awprot">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_awprot"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_0_awready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_awready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_0_awvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_awvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_0_bready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_bready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_bready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="s_axi_0_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_bresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_bresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_0_bvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_bvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_bvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="s_axi_0_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_rdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_rdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_0_rready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_rready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_rready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="s_axi_0_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_rresp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_rresp"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_0_rvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_rvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_rvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="s_axi_0_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_wdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_wdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_0_wready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_wready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_wready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="s_axi_0_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_wstrb">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_wstrb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_0_wvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_wvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_wvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk_0" SIGIS="clk" SIGNAME="External_Ports_s_axi_aclk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_aclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_aresetn_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_s_axi_aresetn_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axlite2wbsp_0" PORT="s_axi_aresetn"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_s_axi_0" DATAWIDTH="32" NAME="s_axi_0" TYPE="SLAVE">
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="28"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_axlite2wbsp_s_axi_aclk_0"/>
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.0"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_0_araddr"/>
+        <PORTMAP LOGICAL="ARCACHE" PHYSICAL="s_axi_0_arcache"/>
+        <PORTMAP LOGICAL="ARPROT" PHYSICAL="s_axi_0_arprot"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_0_arready"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_0_arvalid"/>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_0_awaddr"/>
+        <PORTMAP LOGICAL="AWCACHE" PHYSICAL="s_axi_0_awcache"/>
+        <PORTMAP LOGICAL="AWPROT" PHYSICAL="s_axi_0_awprot"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_0_awready"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_0_awvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_0_bready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_0_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_0_bvalid"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_0_rdata"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_0_rready"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_0_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_0_rvalid"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_0_wdata"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_0_wready"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_0_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_0_wvalid"/>
+      </PORTMAPS>
+      <MEMORYMAP/>
+      <PERIPHERALS/>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="3" FULLNAME="/axlite2wbsp_0" HWVERSION="1.0" INSTANCE="axlite2wbsp_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axlite2wbsp" VLNV="user.org:user:axlite2wbsp:1.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/mbc_wb-v2.0.0/ip_repo/axilite2wbsp/docs/axlite2wbsp_product_guide.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_AXI_ADDR_WIDTH" VALUE="28"/>
+        <PARAMETER NAME="C_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="F_MAXDELAY" VALUE="3"/>
+        <PARAMETER NAME="F_MAXSTALL" VALUE="3"/>
+        <PARAMETER NAME="LGFIFO" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_axlite2wbsp_axlite2wbsp_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="m_wb_ack" SIGIS="undef" SIGNAME="External_Ports_m_wb_ack_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_ack_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="25" NAME="m_wb_adr" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_adr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_adr_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_wb_cyc" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_cyc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_cyc_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="m_wb_dat_r" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_m_wb_dat_r_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_dat_r_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_wb_dat_w" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_dat_w">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_dat_w_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_wb_err" SIGIS="undef" SIGNAME="External_Ports_m_wb_err_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_err_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_wb_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="axlite2wbsp_0_m_wb_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_wb_sel" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_sel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_sel_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_wb_stall" SIGIS="undef" SIGNAME="External_Ports_m_wb_stall_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_stall_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_wb_stb" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_stb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_stb_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_wb_we" SIGIS="undef" SIGNAME="axlite2wbsp_0_m_wb_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_wb_we_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_s_axi_aclk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s_axi_aclk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="27" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_arcache" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_arcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_s_axi_aresetn_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s_axi_aresetn_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s_axi_arprot" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="27" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_awcache" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s_axi_awprot" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="axlite2wbsp_0_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_axlite2wbsp_imp" PORT="s_axi_0_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_s_axi_0" DATAWIDTH="32" NAME="s_axi" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="28"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_axlite2wbsp_s_axi_aclk_0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="s_axi_arcache"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="s_axi_arprot"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="s_axi_awcache"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="s_axi_awprot"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Oct 23 23:48:40 2026
+# Process ID         : 4452
+# Current directory  : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.sim/sim_1/behav/xsim
+# Command line       : xsim -log simulate.log -mode tcl -source {xsim.dir/tb_wb_subsystem_behav/xsim_script.tcl}
+# Log file           : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.sim/sim_1/behav/xsim/simulate.log
+# Journal file       : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.sim/sim_1/behav/xsim/xsim.jou
+# Running On         : archlinux
+# Platform           : unknown
+# Operating System   : unknown
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 4595.894 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16532 MB
+# Swap memory        : 8266 MB
+# Total Virtual      : 24799 MB
+# Available Virtual  : 22640 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_wb_subsystem_behav/xsim_script.tcl
+source tb_wb_subsystem.tcl

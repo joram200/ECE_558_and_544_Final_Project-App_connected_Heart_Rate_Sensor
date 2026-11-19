@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Nov  8 02:53:26 2026
+# Process ID         : 139519
+# Current directory  : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.sim/sim_1/behav/xsim
+# Command line       : xsim -log simulate.log -mode tcl -source {xsim.dir/tb_wb_phyplnt_io_behav/xsim_script.tcl}
+# Log file           : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.sim/sim_1/behav/xsim/simulate.log
+# Journal file       : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.sim/sim_1/behav/xsim/xsim.jou
+# Running On         : archlinux
+# Platform           : unknown
+# Operating System   : unknown
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 4561.342 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16532 MB
+# Swap memory        : 8266 MB
+# Total Virtual      : 24799 MB
+# Available Virtual  : 14798 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_wb_phyplnt_io_behav/xsim_script.tcl
+# xsim {tb_wb_phyplnt_io_behav} -autoloadwcfg -tclbatch {tb_wb_phyplnt_io.tcl}
+Time resolution is 1 ps
+source tb_wb_phyplnt_io.tcl
+## run all
+=== tb_wb_phyplnt_io: Starting ===
+--- Reset state check ---
+  PASS: PWM_CTRL_RST
+  PASS: LUX_VAL_RST
+  PASS: IRQ_STAT_RST
+  PASS: IRQ_EN_RST
+  PASS: SCRATCH0_RST
+  PASS: SCRATCH1_RST
+--- T1: First lux change fires IRQ ---
+  PASS: T1_IRQ_SET
+  PASS: T1_LUX_VAL
+--- T2: W1C clear; same lux → no IRQ ---
+  PASS: T2_CLR_OK
+  PASS: T2_NO_IRQ
+  PASS: T2_LUX_SAME
+--- T3: Different lux fires IRQ ---
+  PASS: T3_IRQ_SET
+  PASS: T3_LUX_VAL
+--- T4: W1C + simultaneous lux (W1C wins) ---
+  PASS: T4_W1C_WINS
+  PASS: T4_LUX_CAP
+--- T5: SCRATCH R/W round-trip ---
+  PASS: T5_SCRATCH0
+  PASS: T5_SCRATCH1
+--- T6: LUX_VALUE is read-only ---
+  PASS: T6_LUX_RO
+--- T7: o_irq output gate ---
+  PASS: T7_STAT_SET
+  PASS: T7_IRQ_GATED_OFF
+  PASS: T7_IRQ_ON
+  PASS: T7_IRQ_CLEARED
+=== RESULTS: 22 passed, 0 failed ===
+SIMULATION RESULT: PASS
+$finish called at time : 706 ns : File "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/tb_wb_phyplnt_io.sv" Line 257
+INFO: [Common 17-206] Exiting xsim at Sun Nov  8 02:53:29 2026...

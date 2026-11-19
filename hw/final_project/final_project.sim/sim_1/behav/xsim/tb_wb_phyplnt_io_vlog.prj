@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+
+# rgbPWM (instructor-provided; instantiated inside wb_phyplnt_io)
+verilog xil_defaultlib \
+"../../../../project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v"
+
+# DUT and testbench (SystemVerilog)
+sv xil_defaultlib \
+"../../../../../hdl/wb_phyplnt_io.sv" \
+"../../../../../hdl/tb_wb_phyplnt_io.sv"
+
+# glbl stub (required by xelab even for designs without global nets)
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

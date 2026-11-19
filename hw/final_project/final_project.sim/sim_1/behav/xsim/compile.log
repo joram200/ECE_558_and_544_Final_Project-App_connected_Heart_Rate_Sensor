@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgbPWM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_phyplnt_io
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'i_clk' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:45]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'i_reset' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:46]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'i_wb_cyc' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:51]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'i_wb_stb' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:52]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'i_wb_we' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:53]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'i_wb_addr' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:54]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'i_wb_data' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:55]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'i_wb_sel' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:56]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'lux_value' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:64]
+WARNING: [VRFC 10-1103] net type must be explicitly specified for 'lux_valid' when default_nettype is none [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/wb_phyplnt_io.sv:65]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/hdl/tb_wb_phyplnt_io.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_wb_phyplnt_io
+INFO: [VRFC 10-2263] Analyzing Verilog file "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

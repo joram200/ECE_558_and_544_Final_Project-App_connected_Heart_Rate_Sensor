@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1794172575" LaunchIncrCheckpoint="$PPRDIR/../../../ECE_544/Project_2/hw/project_2/project_2.srcs/utils_1/imports/synth_1/mbc_wb_nexys4DDR.dcp">
+  <File Type="RDS-DCP" Name="mbc_wb_nexys4DDR.dcp"/>
+  <File Type="RDS-RDS" Name="mbc_wb_nexys4DDR.vds"/>
+  <File Type="REPORTS-TCL" Name="mbc_wb_nexys4DDR_reports.tcl"/>
+  <File Type="PA-TCL" Name="mbc_wb_nexys4DDR.tcl"/>
+  <File Type="RDS-UTIL" Name="mbc_wb_nexys4DDR_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mbc_wb_nexys4DDR_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/embsys/embsys.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/boardio/rgbPWM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/boardio/rgbPWM.v"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/phyplnt/phyplnt.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/Project_2/hw/hdl/phyplnt/phyplnt.sv"/>
+        <Attr Name="ImportTime" Val="1792805924"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/sevenseg/sevensegment.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/sevenseg/sevensegment.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/cdc/sync_reset.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/cdc/sync_reset.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/boardio/wb_boardio.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/boardio/wb_boardio.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/wishbone/wb_err.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/wishbone/wb_err.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/wishbone/wb_mux.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/wishbone/wb_mux.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/wb_phyplnt_io.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/Project_2/hw/hdl/wb_phyplnt_io.sv"/>
+        <Attr Name="ImportTime" Val="1794129719"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/sevenseg/wb_sevenseg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/sevenseg/wb_sevenseg.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/wishbone/wb_subsystem.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/wishbone/wb_subsystem.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/mbc_wb_nexys4DDR.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/mbc_wb_nexys4DDR.sv"/>
+        <Attr Name="ImportTime" Val="1791171502"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/ip_repo/vivado-library/ip/PWM_Analyzer_1.0/hdl/pulseLength.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../ECE_544/Project_1/new_hdl/wb_pwmanalyzer.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga/font_rom.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/font_rom.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga/vga_color_mux.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/vga_color_mux.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga/vga_text_address.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/vga_text_address.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga/vga_text_ram.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/vga_text_ram.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga/vga_text_renderer.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/vga_text_renderer.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga/vga_timing_640x480.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/vga_timing_640x480.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga/wb_vga.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/wb_vga.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/vga/wb_vga_ctrl.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/wb_vga_ctrl.sv"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vga/font_rom_cp437_8x16.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/font_rom_cp437_8x16.mem"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vga/vga_text_init.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/hdl/vga/vga_text_init.mem"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1_axi_vip/design_1_axi_vip.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1_axi_vip_intc/design_1_axi_vip_intc.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1_axlite2wbsp/design_1_axlite2wbsp.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1_axi_intc/design_1_axi_intc.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mbc_wb_nexys4DDR"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/mbv_wb_nexys4DDR.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/mbc_wb-v2.0.0/constraints/mbv_wb_nexys4DDR.xdc"/>
+        <Attr Name="ImportTime" Val="1785895554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/phyplnt_multicycle_v0_7.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE_544/Project_2/hw/constraints/phyplnt_multicycle_v0_7.xdc"/>
+        <Attr Name="ImportTime" Val="1792805900"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/mbc_wb_nexys4DDR.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_microblaze_0_axi_periph_imp_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="embsys_mdm_1_0"/>
+</GenRun>

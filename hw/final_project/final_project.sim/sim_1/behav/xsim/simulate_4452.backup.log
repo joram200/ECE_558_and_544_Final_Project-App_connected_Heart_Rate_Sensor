@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Oct 23 23:48:40 2026
+# Process ID         : 4452
+# Current directory  : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.sim/sim_1/behav/xsim
+# Command line       : xsim -log simulate.log -mode tcl -source {xsim.dir/tb_wb_subsystem_behav/xsim_script.tcl}
+# Log file           : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.sim/sim_1/behav/xsim/simulate.log
+# Journal file       : /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.sim/sim_1/behav/xsim/xsim.jou
+# Running On         : archlinux
+# Platform           : unknown
+# Operating System   : unknown
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency      : 4595.894 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16532 MB
+# Swap memory        : 8266 MB
+# Total Virtual      : 24799 MB
+# Available Virtual  : 22640 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_wb_subsystem_behav/xsim_script.tcl
+# xsim {tb_wb_subsystem_behav} -autoloadwcfg -tclbatch {tb_wb_subsystem.tcl} -key {Behavioral:sim_1:Functional:tb_wb_subsystem} -protoinst {protoinst_files/embsys.protoinst} -protoinst {protoinst_files/design_1_axi_vip.protoinst} -protoinst {protoinst_files/design_1_axi_vip_intc.protoinst} -protoinst {protoinst_files/design_1_axlite2wbsp.protoinst} -protoinst {protoinst_files/design_1_axi_intc.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/embsys.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/embsys.protoinst for the following reason(s):
+There are no instances of module "embsys" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1_axi_vip.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_wb_subsystem/axi_vip_inst//axi_vip_0/M_AXI
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1_axi_vip_intc.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_wb_subsystem/axi_vip_intc_inst//axi_vip_0/M_AXI
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1_axlite2wbsp.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_wb_subsystem/u_bridge//axlite2wbsp_0/s_axi
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1_axi_intc.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /tb_wb_subsystem/u_intc//axi_intc_0/s_axi
+Time resolution is 1 ps
+source tb_wb_subsystem.tcl
+## run 200ms
+XilinxAXIVIP: Found at Path: tb_wb_subsystem.axi_vip_inst.axi_vip_0.inst
+XilinxAXIVIP: Found at Path: tb_wb_subsystem.axi_vip_intc_inst.axi_vip_0.inst
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:111
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229
+WARNING: 5ns : none of the conditions were true for unique case from File:/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229
+WARNING: 75 ns tb_wb_subsystem.axi_vip_inst.axi_vip_0.inst.IF.WREADY_eight_cycle_chk : XILINX_WREADY_MAX_RESET: WREADY must go low after 8 cycles following the first clock edge that ARESETn goes low--UG1037 Xilinx IP generally deasserts all VALID and READY outputs within eight cycles of reset. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
+WARNING: 75 ns tb_wb_subsystem.axi_vip_inst.axi_vip_0.inst.IF.AWREADY_eight_cycle_chk : XILINX_AWREADY_MAX_RESET: AWREADY must go low after 8 cycles following the first clock edge that ARESETn goes low--UG1037 Xilinx IP generally deasserts all VALID and READY outputs within eight cycles of reset. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
+WARNING: 75 ns tb_wb_subsystem.axi_vip_inst.axi_vip_0.inst.IF.ARREADY_eight_cycle_chk : XILINX_ARREADY_MAX_RESET: ARREADY must go low after 8 cycles following the first clock edge that ARESETn goes low--UG1037 Xilinx IP generally deasserts all VALID and READY outputs within eight cycles of reset. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
+WARNING: 205 ns tb_wb_subsystem.axi_vip_inst.axi_vip_0.inst.IF.AWREADY_one_cycle_chk : XILINX_AWREADY_RESET: AWREADY must be low for the first clock edge that ARESETn goes high--PG101 XILINX_AWREADY_RESET. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
+WARNING: 205 ns tb_wb_subsystem.axi_vip_inst.axi_vip_0.inst.IF.WREADY_one_cycle_chk : XILINX_WREADY_RESET: WREADY must be low for the first clock edge that ARESETn goes high--PG101 XILINX_WREADY_RESET. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
+WARNING: 205 ns tb_wb_subsystem.axi_vip_inst.axi_vip_0.inst.IF.ARREADY_one_cycle_chk : XILINX_ARREADY_RESET: ARREADY must be low for the first clock edge that ARESETn goes high--PG101 XILINX_ARREADY_RESET. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
+=== PART 1: Register Map Sweep ===
+  PWMA: waiting 3840000 cycles for stable measurement...
+PASS Part 1: Register map sweep complete.
+=== PART 2: Async ISR + Main Loop ===
+DEBUG 38403695 ns: ISR irq0=1 irq1=0 intc_irq=1 (after 7 cyc)
+DEBUG 38450345 ns: ISR irq0=0 irq1=1 intc_irq=1 (after 7 cyc)
+DEBUG 38488295 ns: ISR irq0=1 irq1=0 intc_irq=1 (after 7 cyc)
+DEBUG 38512285 ns: ISR irq0=1 irq1=0 intc_irq=1 (after 7 cyc)
+DEBUG 38571765 ns: ISR irq0=1 irq1=0 intc_irq=1 (after 7 cyc)
+DEBUG 38597425 ns: ISR irq0=1 irq1=0 intc_irq=1 (after 7 cyc)
+DEBUG 38669375 ns: ISR irq0=1 irq1=0 intc_irq=1 (after 7 cyc)
+DEBUG 57600345 ns: ISR irq0=0 irq1=1 intc_irq=1 (after 7 cyc)
+=== FINAL RESULTS ===
+Part 1: read=0  write=0  hw=0
+Part 2: irq_gen=0  irq_prop=0  rw=0  rgb0=0  pwma=0  hw=0
+PASS: All tests passed
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+$finish called at time : 77202045 ns : File "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/new_hdl/tb_wb_subsystem.sv" Line 1044
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:10:20 . Memory (MB): peak = 1415.629 ; gain = 0.000 ; free physical = 5595 ; free virtual = 19559
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:10:22 . Memory (MB): peak = 1415.629 ; gain = 266.297 ; free physical = 5595 ; free virtual = 19559
+INFO: xsimkernel Simulation Memory Usage: 282992 KB (Peak: 322740 KB), Simulation CPU Usage: 616070 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 23 23:59:03 2026...

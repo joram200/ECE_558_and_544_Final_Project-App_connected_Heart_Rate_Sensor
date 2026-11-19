@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/embsys/ipshared/ec67/hdl" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_lmb_bram_0/sim/embsys_lmb_bram_0.v" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_periph_imp_xbar_0/sim/embsys_microblaze_0_axi_periph_imp_xbar_0.v" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_xlconcat_0/sim/embsys_microblaze_0_xlconcat_0.v" \
+"../../../../project_1.gen/sources_1/bd/embsys/ipshared/ce2b/src/axilrd2wbsp.v" \
+"../../../../project_1.gen/sources_1/bd/embsys/ipshared/ce2b/src/axilwr2wbsp.v" \
+"../../../../project_1.gen/sources_1/bd/embsys/ipshared/ce2b/src/axlite2wbsp.v" \
+"../../../../project_1.gen/sources_1/bd/embsys/ipshared/ce2b/src/wbarbiter.v" \
+"../../../../project_1.gen/sources_1/bd/embsys/sim/embsys.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

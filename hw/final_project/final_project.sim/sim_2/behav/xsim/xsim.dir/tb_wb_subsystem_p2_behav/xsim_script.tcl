@@ -1,0 +1,1 @@
+xsim {tb_wb_subsystem_p2_behav} -autoloadwcfg -tclbatch {tb_wb_subsystem_p2.tcl} -key {Behavioral:sim_2:Functional:tb_wb_subsystem_p2} -protoinst {protoinst_files/design_1_axi_vip.protoinst} -protoinst {protoinst_files/design_1_axi_vip_intc.protoinst} -protoinst {protoinst_files/design_1_axlite2wbsp.protoinst} -protoinst {protoinst_files/design_1_axi_intc.protoinst}

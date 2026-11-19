@@ -1,0 +1,78 @@
+# compile verilog/system verilog design source files
+
+# ── Verilog: AXI INTC and axlite2wbsp IP ─────────────────────────────────────
+verilog xil_defaultlib \
+  --include "../../../../project_2.gen/sources_1/bd/embsys/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip_intc/ipshared/ec67/hdl" \
+  --include "../../../../project_2.ip_user_files/ipstatic" \
+  --include "/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../project_2.ip_user_files/bd/design_1_axi_intc/sim/design_1_axi_intc.v" \
+"../../../../project_2.ip_user_files/bd/design_1_axlite2wbsp/ipshared/ce2b/src/axilrd2wbsp.v" \
+"../../../../project_2.ip_user_files/bd/design_1_axlite2wbsp/ipshared/ce2b/src/axilwr2wbsp.v" \
+"../../../../project_2.ip_user_files/bd/design_1_axlite2wbsp/ipshared/ce2b/src/axlite2wbsp.v" \
+"../../../../project_2.ip_user_files/bd/design_1_axlite2wbsp/ipshared/ce2b/src/wbarbiter.v" \
+"../../../../project_2.ip_user_files/bd/design_1_axlite2wbsp/sim/design_1_axlite2wbsp.v"
+
+# ── SV: AXI VIP INTC package + wrapper ────────────────────────────────────────
+sv xil_defaultlib \
+  --include "../../../../project_2.gen/sources_1/bd/embsys/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip_intc/ipshared/ec67/hdl" \
+  --include "../../../../project_2.ip_user_files/ipstatic" \
+  --include "/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../project_2.ip_user_files/bd/design_1_axi_vip_intc/ip/design_1_axi_vip_intc_axi_vip_0_0/sim/design_1_axi_vip_intc_axi_vip_0_0_pkg.sv" \
+"../../../../project_2.ip_user_files/bd/design_1_axi_vip_intc/ip/design_1_axi_vip_intc_axi_vip_0_0/sim/design_1_axi_vip_intc_axi_vip_0_0.sv"
+
+# ── Verilog: AXI VIP INTC wrapper ─────────────────────────────────────────────
+verilog xil_defaultlib \
+  --include "../../../../project_2.gen/sources_1/bd/embsys/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip_intc/ipshared/ec67/hdl" \
+  --include "../../../../project_2.ip_user_files/ipstatic" \
+  --include "/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../project_2.ip_user_files/bd/design_1_axi_vip_intc/sim/design_1_axi_vip_intc.v"
+
+# ── SV: AXI VIP (WB bus master) package + wrapper ─────────────────────────────
+sv xil_defaultlib \
+  --include "../../../../project_2.gen/sources_1/bd/embsys/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip_intc/ipshared/ec67/hdl" \
+  --include "../../../../project_2.ip_user_files/ipstatic" \
+  --include "/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../project_2.ip_user_files/bd/design_1_axi_vip/ip/design_1_axi_vip_axi_vip_0_0/sim/design_1_axi_vip_axi_vip_0_0_pkg.sv" \
+"../../../../project_2.ip_user_files/bd/design_1_axi_vip/ip/design_1_axi_vip_axi_vip_0_0/sim/design_1_axi_vip_axi_vip_0_0.sv"
+
+# ── Verilog: AXI VIP (WB bus master) wrapper + rgbPWM ─────────────────────────
+verilog xil_defaultlib \
+  --include "../../../../project_2.gen/sources_1/bd/embsys/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip_intc/ipshared/ec67/hdl" \
+  --include "../../../../project_2.ip_user_files/ipstatic" \
+  --include "/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../project_2.ip_user_files/bd/design_1_axi_vip/sim/design_1_axi_vip.v" \
+"../../../../project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v"
+
+# ── SV: wb_subsystem peripherals + phyplnt model + testbench ──────────────────
+sv xil_defaultlib \
+  --include "../../../../project_2.gen/sources_1/bd/embsys/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip/ipshared/ec67/hdl" \
+  --include "../../../../project_2.gen/sources_1/bd/design_1_axi_vip_intc/ipshared/ec67/hdl" \
+  --include "../../../../project_2.ip_user_files/ipstatic" \
+  --include "/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../project_2.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv" \
+"../../../../project_2.srcs/sources_1/imports/hdl/cdc/sync_reset.sv" \
+"../../../../project_2.srcs/sources_1/imports/hdl/boardio/wb_boardio.sv" \
+"../../../../project_2.srcs/sources_1/imports/hdl/wishbone/wb_err.sv" \
+"../../../../project_2.srcs/sources_1/imports/hdl/wishbone/wb_mux.sv" \
+"../../../../project_2.srcs/sources_1/imports/hdl/sevenseg/wb_sevenseg.sv" \
+"../../../../project_2.srcs/sources_1/imports/hdl/wishbone/wb_subsystem.sv" \
+"../../../../../hdl/wb_phyplnt_io.sv" \
+"../../../../../hdl/phyplnt/phyplnt.sv" \
+"../../../../../hdl/tb_wb_subsystem_p2.sv"
+
+# ── glbl stub ─────────────────────────────────────────────────────────────────
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

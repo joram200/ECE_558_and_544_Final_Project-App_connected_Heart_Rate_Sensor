@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.ip_user_files/bd/design_1_axi_intc/ip/design_1_axi_intc_axi_intc_0_0_2/sim/design_1_axi_intc_axi_intc_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_intc_axi_intc_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.ip_user_files/bd/design_1_axlite2wbsp/ipshared/ce2b/src/axlite_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axlite2wbsp_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_1/project_1/project_1.ip_user_files/bd/design_1_axlite2wbsp/ip/design_1_axlite2wbsp_axlite2wbsp_0_0_1/sim/design_1_axlite2wbsp_axlite2wbsp_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axlite2wbsp_axlite2wbsp_0_0'

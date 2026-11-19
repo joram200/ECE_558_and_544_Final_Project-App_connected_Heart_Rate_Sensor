@@ -1,0 +1,637 @@
+
+*** Running vivado
+    with args -log mbc_wb_nexys4DDR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mbc_wb_nexys4DDR.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Nov  8 13:16:18 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mbc_wb_nexys4DDR.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/mbc_wb-v2.0.0/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5578] Found utility IPs instantiated in block design /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/bd/embsys/embsys.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994. 
+Command: read_checkpoint -auto_incremental -incremental /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/utils_1/imports/synth_1/mbc_wb_nexys4DDR.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/utils_1/imports/synth_1/mbc_wb_nexys4DDR.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mbc_wb_nexys4DDR -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 175875
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1929.102 ; gain = 280.164 ; free physical = 542 ; free virtual = 6926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mbc_wb_nexys4DDR' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/mbc_wb_nexys4DDR.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:13]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_0_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_0_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timer_0_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timer_0_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axi_timer_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:275]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:275]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:275]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'embsys_axi_timer_0_0' has 26 connections declared, but only 23 given [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:275]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timer_1_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axi_timer_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timer_1_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axi_timer_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'embsys_axi_timer_1_0' is unconnected for instance 'axi_timer_1' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:299]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'embsys_axi_timer_1_0' is unconnected for instance 'axi_timer_1' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:299]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'embsys_axi_timer_1_0' is unconnected for instance 'axi_timer_1' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:299]
+WARNING: [Synth 8-7023] instance 'axi_timer_1' of module 'embsys_axi_timer_1_0' has 26 connections declared, but only 23 given [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:299]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_uartlite_0_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_uartlite_0_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axlite2wbsp_0_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axlite2wbsp_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axlite2wbsp_0_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_axlite2wbsp_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_mdm_1_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_mdm_1_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_mdm_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt' of module 'embsys_mdm_1_0' is unconnected for instance 'mdm_1' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:381]
+WARNING: [Synth 8-7023] instance 'mdm_1' of module 'embsys_mdm_1_0' has 30 connections declared, but only 29 given [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:381]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_intc_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_intc_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_periph_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:691]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_OEGTNN' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:1657]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_OEGTNN' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:1657]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1X988FM' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:1772]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1X988FM' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:1772]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1LSUSSG' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:1887]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1LSUSSG' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:1887]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_Z0V64X' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2002]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_Z0V64X' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2002]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_10K59R8' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2117]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_10K59R8' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2117]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_CO79RP' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2244]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_CO79RP' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2244]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_17TSQV' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2359]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_17TSQV' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2359]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_QRRRG2' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2687]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_QRRRG2' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2687]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_periph_imp_xbar_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_microblaze_0_axi_periph_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_periph_imp_xbar_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_microblaze_0_axi_periph_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'm_axi_arprot' does not match port width (21) of module 'embsys_microblaze_0_axi_periph_imp_xbar_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:1618]
+WARNING: [Synth 8-689] width (15) of port connection 'm_axi_awprot' does not match port width (21) of module 'embsys_microblaze_0_axi_periph_imp_xbar_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:1622]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_periph_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:691]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2474]
+INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_bram_if_cntlr_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_bram_if_cntlr_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_v10_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_v10_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2599]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'embsys_dlmb_v10_0' has 25 connections declared, but only 24 given [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2599]
+INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_bram_if_cntlr_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_bram_if_cntlr_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_v10_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_v10_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2645]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'embsys_ilmb_v10_0' has 25 connections declared, but only 24 given [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2645]
+INFO: [Synth 8-6157] synthesizing module 'embsys_lmb_bram_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_lmb_bram_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'embsys_lmb_bram_0' is unconnected for instance 'lmb_bram' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2670]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'embsys_lmb_bram_0' is unconnected for instance 'lmb_bram' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2670]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'embsys_lmb_bram_0' has 16 connections declared, but only 14 given [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2670]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:2474]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_xlconcat_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_xlconcat_0/synth/embsys_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_6_xlconcat' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_6_xlconcat' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_xlconcat_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_xlconcat_0/synth/embsys_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'embsys_rst_Clk_100M_0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_rst_Clk_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_rst_Clk_100M_0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/.Xil/Vivado-175795-archlinux/realtime/embsys_rst_Clk_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'embsys_rst_Clk_100M_0' is unconnected for instance 'rst_Clk_100M' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:680]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'embsys_rst_Clk_100M_0' is unconnected for instance 'rst_Clk_100M' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:680]
+WARNING: [Synth 8-7023] instance 'rst_Clk_100M' of module 'embsys_rst_Clk_100M_0' has 10 connections declared, but only 8 given [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:680]
+INFO: [Synth 8-6155] done synthesizing module 'embsys' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/synth/embsys.v:13]
+INFO: [Synth 8-6157] synthesizing module 'wb_subsystem' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wishbone/wb_subsystem.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'sync_reset' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/cdc/sync_reset.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'sync_reset' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/cdc/sync_reset.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'wb_mux' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wishbone/wb_mux.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'wb_mux' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wishbone/wb_mux.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'wb_boardio' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/wb_boardio.sv:91]
+	Parameter DW bound to: 32'sb00000000000000000000000000100000 
+	Parameter AW bound to: 32'sb00000000000000000000000000100000 
+	Parameter NUM_LEDS bound to: 32'sb00000000000000000000000000010000 
+	Parameter NUM_SWITCHES bound to: 32'sb00000000000000000000000000010000 
+	Parameter NUM_BTNS bound to: 32'sb00000000000000000000000000000101 
+	Parameter NUM_RGBLEDS bound to: 32'sb00000000000000000000000000000010 
+	Parameter BOARD_ID bound to: nxa7 - type: string 
+INFO: [Synth 8-6157] synthesizing module 'rgbPWM' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v:31]
+	Parameter USE_DIVIDER bound to: 1'b1 
+	Parameter DIVIDE_COUNT bound to: 5000 - type: integer 
+	Parameter POLARITY bound to: 1'b1 
+	Parameter MAX_COUNT bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rgbPWM' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v:31]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/wb_boardio.sv:258]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/wb_boardio.sv:306]
+INFO: [Synth 8-6155] done synthesizing module 'wb_boardio' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/wb_boardio.sv:91]
+INFO: [Synth 8-6157] synthesizing module 'wb_sevenseg' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/wb_sevenseg.sv:33]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/wb_sevenseg.sv:83]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/wb_sevenseg.sv:97]
+INFO: [Synth 8-6157] synthesizing module 'sevensegment' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:29]
+	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter REFRESH_FREQUENCY_HZ bound to: 500 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 0 - type: integer 
+	Parameter CNTR_WIDTH bound to: 32 - type: integer 
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:94]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:111]
+INFO: [Synth 8-6157] synthesizing module 'Digit' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:186]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:229]
+INFO: [Synth 8-6155] done synthesizing module 'Digit' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:186]
+INFO: [Synth 8-6155] done synthesizing module 'sevensegment' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/sevensegment.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'wb_sevenseg' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/sevenseg/wb_sevenseg.sv:33]
+INFO: [Synth 8-6157] synthesizing module 'wb_err' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wishbone/wb_err.sv:15]
+	Parameter DW bound to: 32'sb00000000000000000000000000100000 
+	Parameter AW bound to: 32'sb00000000000000000000000000100000 
+INFO: [Synth 8-6155] done synthesizing module 'wb_err' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wishbone/wb_err.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'wb_phyplnt_io' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wb_phyplnt_io.sv:41]
+	Parameter DW bound to: 32'sb00000000000000000000000000100000 
+	Parameter AW bound to: 32'sb00000000000000000000000000100000 
+INFO: [Synth 8-6157] synthesizing module 'rgbPWM__parameterized0' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v:31]
+	Parameter USE_DIVIDER bound to: 1'b1 
+	Parameter DIVIDE_COUNT bound to: 200 - type: integer 
+	Parameter POLARITY bound to: 1'b1 
+	Parameter MAX_COUNT bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rgbPWM__parameterized0' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/boardio/rgbPWM.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'wb_phyplnt_io' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wb_phyplnt_io.sv:41]
+INFO: [Synth 8-6155] done synthesizing module 'wb_subsystem' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wishbone/wb_subsystem.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'phyplnt' [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/phyplnt/phyplnt.sv:30]
+	Parameter SIMULATION bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'phyplnt' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/phyplnt/phyplnt.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'mbc_wb_nexys4DDR' (0#1) [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/mbc_wb_nexys4DDR.sv:18]
+WARNING: [Synth 8-3848] Net wb_debug in module/entity wb_subsystem does not have driver. [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/sources_1/imports/hdl/wishbone/wb_subsystem.sv:130]
+WARNING: [Synth 8-7129] Port gpio_ch1[31] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[30] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[29] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[28] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[27] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[26] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[25] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[24] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[23] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[22] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[21] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[20] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[19] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[18] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[17] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[16] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[15] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[14] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[13] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[12] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[11] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch1[10] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[31] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[30] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[29] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[28] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[27] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[26] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[25] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[24] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[23] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[22] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[21] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[20] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[19] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[18] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[17] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gpio_ch2[16] in module phyplnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port controlReg[30] in module rgbPWM__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port controlReg[29] in module rgbPWM__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port controlReg[28] in module rgbPWM__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port controlReg[27] in module rgbPWM__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port controlReg[26] in module rgbPWM__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port controlReg[25] in module rgbPWM__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port controlReg[24] in module rgbPWM__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[31] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[30] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[29] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[28] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[27] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[26] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[25] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[24] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[23] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[22] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[21] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[20] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[19] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[18] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[17] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[16] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[15] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[14] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[13] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[12] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[11] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[10] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[9] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[8] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[7] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[6] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[1] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[0] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_sel[3] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_sel[2] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_sel[1] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_sel[0] in module wb_phyplnt_io is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_we in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[31] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[30] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[29] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[28] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[27] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[26] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[25] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[24] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[23] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[22] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[21] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[20] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[19] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[18] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[17] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[16] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[15] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[14] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[13] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[12] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[11] in module wb_err is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_wb_addr[10] in module wb_err is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2017.070 ; gain = 368.133 ; free physical = 442 ; free virtual = 6828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2023.008 ; gain = 374.070 ; free physical = 447 ; free virtual = 6833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2023.008 ; gain = 374.070 ; free physical = 447 ; free virtual = 6833
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2023.008 ; gain = 0.000 ; free physical = 452 ; free virtual = 6837
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_0/embsys_microblaze_0_0/embsys_microblaze_0_0_in_context.xdc] for cell 'u_embsys/microblaze_0'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_0/embsys_microblaze_0_0/embsys_microblaze_0_0_in_context.xdc] for cell 'u_embsys/microblaze_0'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_dlmb_v10_0/embsys_dlmb_v10_0/embsys_dlmb_v10_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_dlmb_v10_0/embsys_dlmb_v10_0/embsys_dlmb_v10_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_ilmb_v10_0/embsys_ilmb_v10_0/embsys_dlmb_v10_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_ilmb_v10_0/embsys_ilmb_v10_0/embsys_dlmb_v10_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_dlmb_bram_if_cntlr_0/embsys_dlmb_bram_if_cntlr_0/embsys_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_dlmb_bram_if_cntlr_0/embsys_dlmb_bram_if_cntlr_0/embsys_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_ilmb_bram_if_cntlr_0/embsys_ilmb_bram_if_cntlr_0/embsys_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_ilmb_bram_if_cntlr_0/embsys_ilmb_bram_if_cntlr_0/embsys_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_lmb_bram_0/embsys_lmb_bram_0/embsys_lmb_bram_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_lmb_bram_0/embsys_lmb_bram_0/embsys_lmb_bram_0_in_context.xdc] for cell 'u_embsys/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_periph_imp_xbar_0/embsys_microblaze_0_axi_periph_imp_xbar_0/embsys_microblaze_0_axi_periph_imp_xbar_0_in_context.xdc] for cell 'u_embsys/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_periph_imp_xbar_0/embsys_microblaze_0_axi_periph_imp_xbar_0/embsys_microblaze_0_axi_periph_imp_xbar_0_in_context.xdc] for cell 'u_embsys/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0/embsys_mdm_1_0_in_context.xdc] for cell 'u_embsys/mdm_1'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0/embsys_mdm_1_0_in_context.xdc] for cell 'u_embsys/mdm_1'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_rst_Clk_100M_0/embsys_rst_Clk_100M_0/embsys_rst_Clk_100M_0_in_context.xdc] for cell 'u_embsys/rst_Clk_100M'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_rst_Clk_100M_0/embsys_rst_Clk_100M_0/embsys_rst_Clk_100M_0_in_context.xdc] for cell 'u_embsys/rst_Clk_100M'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axi_timer_0_0/embsys_axi_timer_0_0/embsys_axi_timer_0_0_in_context.xdc] for cell 'u_embsys/axi_timer_0'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axi_timer_0_0/embsys_axi_timer_0_0/embsys_axi_timer_0_0_in_context.xdc] for cell 'u_embsys/axi_timer_0'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axi_timer_1_0/embsys_axi_timer_1_0/embsys_axi_timer_0_0_in_context.xdc] for cell 'u_embsys/axi_timer_1'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axi_timer_1_0/embsys_axi_timer_1_0/embsys_axi_timer_0_0_in_context.xdc] for cell 'u_embsys/axi_timer_1'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0_in_context.xdc] for cell 'u_embsys/axi_uartlite_0'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0/embsys_axi_uartlite_0_0_in_context.xdc] for cell 'u_embsys/axi_uartlite_0'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axlite2wbsp_0_0/embsys_axlite2wbsp_0_0/embsys_axlite2wbsp_0_0_in_context.xdc] for cell 'u_embsys/axlite2wbsp_0'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axlite2wbsp_0_0/embsys_axlite2wbsp_0_0/embsys_axlite2wbsp_0_0_in_context.xdc] for cell 'u_embsys/axlite2wbsp_0'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0_in_context.xdc] for cell 'u_embsys/axi_gpio_0'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0/embsys_axi_gpio_0_0_in_context.xdc] for cell 'u_embsys/axi_gpio_0'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0_in_context.xdc] for cell 'u_embsys/microblaze_0_axi_intc'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0/embsys_microblaze_0_axi_intc_0_in_context.xdc] for cell 'u_embsys/microblaze_0_axi_intc'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clkgen'
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clkgen'
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/mbv_wb_nexys4DDR.xdc]
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/mbv_wb_nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/mbv_wb_nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mbc_wb_nexys4DDR_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mbc_wb_nexys4DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/phyplnt_multicycle_v0_7.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == FDRE && NAME =~ *u_phyplnt/numerator_snapshot_reg*}'. [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/phyplnt_multicycle_v0_7.xdc:13]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == FDRE && NAME =~ *u_phyplnt/lux_value_reg*}'. [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/phyplnt_multicycle_v0_7.xdc:17]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/phyplnt_multicycle_v0_7.xdc:22]
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/phyplnt_multicycle_v0_7.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/phyplnt_multicycle_v0_7.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mbc_wb_nexys4DDR_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.srcs/constrs_1/imports/constraints/phyplnt_multicycle_v0_7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mbc_wb_nexys4DDR_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mbc_wb_nexys4DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2148.473 ; gain = 0.000 ; free physical = 468 ; free virtual = 6839
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2148.473 ; gain = 0.000 ; free physical = 468 ; free virtual = 6839
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_embsys/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2148.473 ; gain = 499.535 ; free physical = 459 ; free virtual = 6844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2156.477 ; gain = 507.539 ; free physical = 459 ; free virtual = 6844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  /run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/rst_Clk_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/axi_timer_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/axlite2wbsp_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_embsys/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_clkgen. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2156.477 ; gain = 507.539 ; free physical = 459 ; free virtual = 6844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2156.477 ; gain = 507.539 ; free physical = 461 ; free virtual = 6848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               46 Bit    Registers := 1     
+	               32 Bit    Registers := 12    
+	               16 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 16    
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	               4x42  Multipliers := 1     
+	               8x34  Multipliers := 1     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   32 Bit        Muxes := 25    
+	   6 Input   32 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 20    
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 26    
+	   6 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP numerator_snapshot2, operation Mode is: A2*B2.
+DSP Report: register transmission_snapshot_reg is absorbed into DSP numerator_snapshot2.
+DSP Report: register completed_high_snapshot_reg is absorbed into DSP numerator_snapshot2.
+DSP Report: operator numerator_snapshot2 is absorbed into DSP numerator_snapshot2.
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_R[3] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_R[2] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_R[1] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_R[0] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_G[3] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_G[2] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_G[1] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_G[0] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_B[3] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_B[2] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_B[1] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_B[0] driven by constant 0
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_HS driven by constant 1
+WARNING: [Synth 8-3917] design mbc_wb_nexys4DDR has port VGA_VS driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2156.477 ; gain = 507.539 ; free physical = 465 ; free virtual = 6847
+---------------------------------------------------------------------------------
+ Sort Area is  numerator_snapshot2_0 : 0 0 : 1611 1611 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|phyplnt     | A2*B2       | 24     | 10     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2219.477 ; gain = 570.539 ; free physical = 397 ; free virtual = 6785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2271.547 ; gain = 622.609 ; free physical = 347 ; free virtual = 6730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2271.547 ; gain = 622.609 ; free physical = 342 ; free virtual = 6725
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.359 ; gain = 766.422 ; free physical = 257 ; free virtual = 6646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.359 ; gain = 766.422 ; free physical = 257 ; free virtual = 6646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.359 ; gain = 766.422 ; free physical = 257 ; free virtual = 6646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.359 ; gain = 766.422 ; free physical = 257 ; free virtual = 6646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.359 ; gain = 766.422 ; free physical = 258 ; free virtual = 6647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.359 ; gain = 766.422 ; free physical = 258 ; free virtual = 6647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|phyplnt     | A'*B'       | 24     | 10     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+------------------------------------------+----------+
+|      |BlackBox name                             |Instances |
++------+------------------------------------------+----------+
+|1     |clk_wiz_0                                 |         1|
+|2     |embsys_axi_gpio_0_0                       |         1|
+|3     |embsys_axi_timer_0_0                      |         1|
+|4     |embsys_axi_timer_1_0                      |         1|
+|5     |embsys_axi_uartlite_0_0                   |         1|
+|6     |embsys_axlite2wbsp_0_0                    |         1|
+|7     |embsys_mdm_1_0                            |         1|
+|8     |embsys_microblaze_0_0                     |         1|
+|9     |embsys_microblaze_0_axi_intc_0            |         1|
+|10    |embsys_microblaze_0_axi_periph_imp_xbar_0 |         1|
+|11    |embsys_rst_Clk_100M_0                     |         1|
+|12    |embsys_dlmb_bram_if_cntlr_0               |         1|
+|13    |embsys_dlmb_v10_0                         |         1|
+|14    |embsys_ilmb_bram_if_cntlr_0               |         1|
+|15    |embsys_ilmb_v10_0                         |         1|
+|16    |embsys_lmb_bram_0                         |         1|
++------+------------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |clk_wiz                                 |     1|
+|2     |embsys_axi_gpio_0                       |     1|
+|3     |embsys_axi_timer_0                      |     1|
+|4     |embsys_axi_timer_1                      |     1|
+|5     |embsys_axi_uartlite_0                   |     1|
+|6     |embsys_axlite2wbsp_0                    |     1|
+|7     |embsys_dlmb_bram_if_cntlr               |     1|
+|8     |embsys_dlmb_v10                         |     1|
+|9     |embsys_ilmb_bram_if_cntlr               |     1|
+|10    |embsys_ilmb_v10                         |     1|
+|11    |embsys_lmb_bram                         |     1|
+|12    |embsys_mdm_1                            |     1|
+|13    |embsys_microblaze_0                     |     1|
+|14    |embsys_microblaze_0_axi_intc            |     1|
+|15    |embsys_microblaze_0_axi_periph_imp_xbar |     1|
+|16    |embsys_rst_Clk_100M                     |     1|
+|17    |CARRY4                                  |   160|
+|18    |DSP48E1                                 |     1|
+|19    |LUT1                                    |    33|
+|20    |LUT2                                    |   208|
+|21    |LUT3                                    |   266|
+|22    |LUT4                                    |   245|
+|23    |LUT5                                    |   202|
+|24    |LUT6                                    |   395|
+|25    |FDPE                                    |     2|
+|26    |FDRE                                    |   626|
+|27    |FDSE                                    |    70|
+|28    |IBUF                                    |    23|
+|29    |OBUF                                    |    53|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.359 ; gain = 766.422 ; free physical = 258 ; free virtual = 6647
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 131 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2415.359 ; gain = 640.957 ; free physical = 261 ; free virtual = 6650
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.367 ; gain = 766.422 ; free physical = 262 ; free virtual = 6650
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2415.367 ; gain = 0.000 ; free physical = 426 ; free virtual = 6814
+INFO: [Netlist 29-17] Analyzing 161 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2471.387 ; gain = 0.000 ; free physical = 419 ; free virtual = 6811
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ff913239
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 2471.387 ; gain = 1062.566 ; free physical = 419 ; free virtual = 6812
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1832.295; main = 1782.288; forked = 301.593
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3175.305; main = 2471.391; forked = 911.762
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2495.398 ; gain = 0.000 ; free physical = 419 ; free virtual = 6812
+INFO: [Common 17-1381] The checkpoint '/run/media/sackb/Windows-SSD/Users/sackb/OneDrive/Desktop/University/Course_Work/2026-2027/Fall_2026/ECE_544/Project_2/project_2/project_2.runs/synth_1/mbc_wb_nexys4DDR.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mbc_wb_nexys4DDR_utilization_synth.rpt -pb mbc_wb_nexys4DDR_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  8 13:16:50 2026...

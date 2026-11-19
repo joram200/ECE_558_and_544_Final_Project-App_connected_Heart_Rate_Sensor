@@ -1,0 +1,18 @@
+vhdl xil_defaultlib  \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_0/sim/embsys_microblaze_0_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_dlmb_v10_0/sim/embsys_dlmb_v10_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_ilmb_v10_0/sim/embsys_ilmb_v10_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_dlmb_bram_if_cntlr_0/sim/embsys_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_ilmb_bram_if_cntlr_0/sim/embsys_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_axi_intc_0/sim/embsys_microblaze_0_axi_intc_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/sim/embsys_mdm_1_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_rst_Clk_100M_0/sim/embsys_rst_Clk_100M_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_axi_timer_0_0/sim/embsys_axi_timer_0_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_axi_timer_1_0/sim/embsys_axi_timer_1_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_axi_uartlite_0_0/sim/embsys_axi_uartlite_0_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ipshared/ce2b/src/axlite_wrapper.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_axlite2wbsp_0_0/sim/embsys_axlite2wbsp_0_0.vhd" \
+"../../../../project_1.gen/sources_1/bd/embsys/ip/embsys_axi_gpio_0_0/sim/embsys_axi_gpio_0_0.vhd" \
+
+# Do not sort compile order
+nosort
